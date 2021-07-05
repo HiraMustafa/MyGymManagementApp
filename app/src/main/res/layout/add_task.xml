@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:drawableRight="@drawable/ic_edit"
+        android:background="@drawable/background_edittext_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:id="@+id/tvday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Day:"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:drawableRight="@drawable/ic_edit"
+        android:background="@drawable/background_edittext_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:id="@+id/tvtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task:"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/ettask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:drawableRight="@drawable/ic_edit"
+        android:background="@drawable/background_edittext_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/btnsave"
+        android:backgroundTint="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

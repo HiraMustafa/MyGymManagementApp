@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userTaskFragment">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal">
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="Tasks"
+          android:layout_marginTop="10dp"
+          android:layout_weight="0.98"
+          android:textStyle="bold"
+          android:textSize="24sp"
+          android:textColor="@color/black"
+          android:gravity="center_horizontal">
+      </TextView>
+      <ImageView
+          android:layout_width="0dp"
+          android:layout_height="50dp"
+          android:src="@drawable/ic_add_task"
+          android:layout_weight="0.25"
+          android:layout_gravity="end"
+          android:layout_marginTop="20dp"
+          android:backgroundTint="@color/white"/>
+  </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="tasks"/>
+    </LinearLayout>
+</FrameLayout>

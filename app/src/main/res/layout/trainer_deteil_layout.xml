@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="5dp"
+    app:cardElevation="2dp"
+    tools:context=".fragments.TrainerFragment">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <de.hdodenhof.circleimageview.CircleImageView
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/profile_image"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:layout_marginTop="10dp"
+           android:layout_gravity="center_horizontal"
+           android:src="@drawable/ic_baseline_person_24"
+           app:civ_border_width="2dp"
+           app:civ_border_color="#FF000000"/>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="8dp"
+           android:backgroundTint="@color/grey"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginHorizontal="20dp"
+           android:layout_marginTop="10dp"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/tvName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:ems="10"
+               android:textColor="@android:color/black"
+               android:textSize="16sp" />
+           <TextView
+               android:id="@+id/tvEmail"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:ems="10"
+               android:textColor="@android:color/black"
+               android:textSize="16sp" />
+           <TextView
+               android:id="@+id/tvphnno"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:textColor="@color/black"/>
+
+           <TextView
+               android:id="@+id/tvage"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:textColor="@color/black"/>
+
+           <TextView
+               android:id="@+id/tvexperience"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:textColor="@color/black"/>
+           <TextView
+               android:id="@+id/tvdiscription"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:textColor="@color/black" />
+
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/llTrainer"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <Button
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="15dp"
+               android:text="Accept"
+               android:id="@+id/btntaccept"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:backgroundTint="@color/black"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginTop="20dp"/>
+           <Button
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:text="Reject"
+               android:id="@+id/btntreject"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:backgroundTint="@color/black"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginTop="20dp"/>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:visibility="gone"
+           android:id="@+id/llUser"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <Button
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="15dp"
+               android:text="Invite"
+               android:id="@+id/btnInvite"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:backgroundTint="@color/black"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginTop="20dp"/>
+           <Button
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:text="Cancel"
+               android:id="@+id/btnCancel"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:backgroundTint="@color/black"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginTop="20dp"/>
+
+
+       </LinearLayout>
+   </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
